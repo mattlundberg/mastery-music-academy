@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Contact from "../pages/Contact";
-import NotFound from "../pages/NotFound";
+import Home from "../pages/External/Home";
+import About from "../pages/External/About";
+import Contact from "../pages/External/Contact";
+import NotFound from "../pages/External/NotFound";
 import Container from "react-bootstrap/Container";
 
 class Routes extends Component {
