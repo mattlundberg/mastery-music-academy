@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "../css/App.css";
-import Body from "../components/Body";
-import Header from "../components/Header";
-import Navigation from "../components/Nav";
-import Footer from "../components/Footer";
+import Body from "../../components/Body";
+import Header from "../../components/Header";
+import Navigation from "../../components/Nav";
+import Footer from "../../components/Footer";
 
-class Home extends Component {
+class About extends Component {
   render() {
     return (
       <div className="App">
@@ -18,4 +18,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default About;

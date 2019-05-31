@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "../css/App.css";
 import { Col, Row, Button } from "react-bootstrap";
-import Header from "../components/Header";
-import Navigation from "../components/Nav";
-import Footer from "../components/Footer";
-import { TextField, EmailField } from "../components/InputFields";
+import Header from "../../components/Header";
+import Navigation from "../../components/Nav";
+import Footer from "../../components/Footer";
+import { TextField, EmailField } from "../../components/InputFields";
 
 class Contact extends Component {
   constructor(props) {
