@@ -1,21 +1,14 @@
 import React from "react";
-import {
-  Col,
-  Row,
-  InputGroup,
-  FormControl,
-  Dropdown,
-  Button
-} from "react-bootstrap";
 
 const TextField = props => {
   return (
     <div>
-      <label htmlFor={props.fieldname} className="control-label text-left">
-        {props.labeltext}
-      </label>
-      <InputGroup className="mb-3">
-        <FormControl
+      <div className="form-group">
+        <label htmlFor={props.fieldname} className="control-label">
+          {props.title}
+        </label>
+        <input
+          className="form-control"
           id={props.fieldname}
           type="text"
           placeholder={props.placeholdertext}
@@ -23,7 +16,28 @@ const TextField = props => {
           value={props.fieldvalue}
           onChange={props.handler}
         />
-      </InputGroup>
+      </div>
+    </div>
+  );
+};
+
+const PhoneField = props => {
+  return (
+    <div>
+      <div className="form-group">
+        <label htmlFor={props.fieldname} className="control-label">
+          {props.title}
+        </label>
+        <input
+          className="form-control"
+          id={props.fieldname}
+          type="tel"
+          placeholder={props.placeholdertext}
+          name={props.fieldname}
+          value={props.fieldvalue}
+          onChange={props.handler}
+        />
+      </div>
     </div>
   );
 };
@@ -31,11 +45,12 @@ const TextField = props => {
 const EmailField = props => {
   return (
     <div>
-      <label htmlFor={props.fieldname} className="control-label">
-        {props.labeltext}
-      </label>
-      <InputGroup className="mb-3">
-        <FormControl
+      <div className="form-group">
+        <label htmlFor={props.fieldname} className="control-label">
+          {props.title}
+        </label>
+        <input
+          className="form-control"
           id={props.fieldname}
           type="email"
           placeholder={props.placeholdertext}
@@ -43,19 +58,34 @@ const EmailField = props => {
           value={props.fieldvalue}
           onChange={props.handler}
         />
-      </InputGroup>
+      </div>
     </div>
   );
 };
 
-const DropdownField = props => {
+const SelectField = props => {
   return (
-    <div>
-      <label htmlFor={props.fieldname} className="control-label">
-        {props.labeltext}
-      </label>
+    <div className="form-group">
+      <label htmlFor={props.fieldname}> {props.title} </label>
+      <select
+        className="form-control"
+        name={props.fieldname}
+        value={props.fieldvalue}
+        onChange={props.handler}
+      >
+        <option value="" disabled>
+          {props.placeholdertext}
+        </option>
+        {props.options.map(option => {
+          return (
+            <option key={option} value={option} label={option}>
+              {option}
+            </option>
+          );
+        })}
+      </select>
     </div>
   );
 };
 
-export { TextField, EmailField };
+export { TextField, EmailField, SelectField, PhoneField };

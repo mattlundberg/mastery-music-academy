@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import logo from "../masterymusicacademylogo.jpg";
 
 class Header extends Component {
   render() {

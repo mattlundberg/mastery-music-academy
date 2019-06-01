@@ -3,20 +3,20 @@ import "../../css/App.css";
 import Header from "../../components/Header";
 import Navigation from "../../components/Nav";
 import Footer from "../../components/Footer";
-import { ContactForm } from "../../components/FormSelection";
+import { ApplicationForm } from "../../components/FormSelection";
 
-class Contact extends Component {
+class Application extends Component {
   render() {
     return (
       <div>
         <Navigation />
         <Header username="Matt Lundberg" />
         <br />
-        <ContactForm />
+        <ApplicationForm />
         <Footer />
       </div>
     );
   }
 }
 
-export default Contact;
+export default Application;

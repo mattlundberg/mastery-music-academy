@@ -12,15 +12,20 @@ class Navigation extends Component {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+            <Nav.Link href="/application">Apply</Nav.Link>
+            <NavDropdown title="Other Sites" id="basic-nav-dropdown">
+              <NavDropdown.Item
+                target="_blank"
+                href="https://www.facebook.com/lundberg.emilie/"
+              >
+                Facebook
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
+              <NavDropdown.Item
+                target="_blank"
+                href="https://masterymusicacademy.mymusicstaff.com/"
+              >
+                Class Signup
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
