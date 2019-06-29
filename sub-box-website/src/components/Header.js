@@ -4,18 +4,8 @@ class HomeHeader extends Component {
   render() {
     return (
       <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <div>Welcome {this.props.username}</div>
+        <h1>Welcome to Subscription Box</h1>
+        <h3>Bringing music to you and your kids</h3>
       </header>
     );
   }
