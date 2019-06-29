@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../../css/App.css";
-import Body from "../../components/Body";
-import Header from "../../components/Header";
+import { HomeBody } from "../../components/Body";
+import { HomeHeader } from "../../components/Header";
 import Navigation from "../../components/Nav";
 import Footer from "../../components/Footer";
 
@@ -10,8 +10,8 @@ class Home extends Component {
     return (
       <div className="App">
         <Navigation />
-        <Header username="Matt Lundberg" />
-        <Body />
+        <HomeHeader username="Matt Lundberg" />
+        <HomeBody />
         <Footer />
       </div>
     );

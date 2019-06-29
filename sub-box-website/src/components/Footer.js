@@ -6,23 +6,17 @@ export class Footer extends Component {
     return (
       <footer>
         <Navbar bg="light" variant="light" expand="lg">
-          <Row>
-            <Col>
-              <Navbar.Brand className="mr-auto" href="/">
-                Mastery Music Academy
-              </Navbar.Brand>
-            </Col>
-            <Col>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-xs-3">
-                  <Nav.Link href="/">Home</Nav.Link>
-                  <Nav.Link href="/about">About</Nav.Link>
-                  <Nav.Link href="/contact">Contact</Nav.Link>
-                </Nav>
-              </Navbar.Collapse>
-            </Col>
-          </Row>
+          <Navbar.Brand href="/">Subscription Box</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav class="mr-auto" />
+            <Nav>
+              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/subscriptionbox">Subscription Box</Nav.Link>
+              <Nav.Link href="/aboutus">About Us</Nav.Link>
+              <Nav.Link href="#">Buy</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Navbar>
       </footer>
     );

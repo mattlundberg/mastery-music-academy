@@ -10,4 +10,34 @@ class Body extends Component {
   }
 }
 
-export default Body;
+class HomeBody extends Component {
+  render() {
+    return (
+      <body>
+        <p>This is the home page content</p>
+      </body>
+    );
+  }
+}
+
+class SubBody extends Component {
+  render() {
+    return (
+      <body>
+        <p>This is the sub information page content</p>
+      </body>
+    );
+  }
+}
+
+class AboutUsBody extends Component {
+  render() {
+    return (
+      <body>
+        <p>This is the about us page content</p>
+      </body>
+    );
+  }
+}
+
+export { Body, HomeBody, AboutUsBody, SubBody };
